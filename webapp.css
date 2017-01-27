@@ -1,3 +1,21 @@
 @charset "UTF-8";
 /* CSS Document */
+.page{
+	color: black;
+	background-color: #BEF3F5;
+}
 
+.storyline{
+	color: black;
+}
+
+.picture{
+	margin-left: 300px;	 
+}
+
+.choices{
+}
+
+.button{
+
+}
