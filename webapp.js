@@ -15,5 +15,5 @@ function next(choice) {
 		document.getElementById("title").innerHTML= " ";
 		document.getElementById("stories").innerHTML= "You are walking back from your dectective office yo your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the disstance with a shiny black gun, a model rare to find";
 		documemt.getElementById("image").setAttribute("src", "images/shadow.jpg")
-	}
+		}
 	}
