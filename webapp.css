@@ -4,12 +4,12 @@
 /*Background Page*/
 .page{
 	color: black;
-	background-color: #BEF3F5;
+	background-color:#573D61;
 	
 }
 /*Storyline*/
 .storyline{
-	color: black;
+	color: #B2EDFF;
 	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 }
 /*Picture*/
@@ -17,6 +17,7 @@
 	margin-left: 300px;	 
 }
 
+/*button*/
 .button{
 	width: 60px;
 	height: 40px;
@@ -25,7 +26,7 @@
 	margin-left: 17px;
 	cursor: pointer;
 	border-top: 2px solid transparent;
-	color:#C28FE3;
+	color:#00ABFF;
 
 }
 	
