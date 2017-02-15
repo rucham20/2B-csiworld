@@ -9,7 +9,7 @@ function next(x) {
 		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the disstance with a shiny black gun, a model rare to find.";
 		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your dectective colleagues?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'> <input type='button'  onClick='next(4)' value='Call your colleagues'>";
-		document.getElementById("image").setAttribute("src", "images/shadow1.jpg");
+		document.getElementById("image").innerHTML= "<img src='images/shadow1.png' alt= 'test' width= '455'>";
 		break;
 		
 	case 2:
@@ -17,14 +17,14 @@ function next(x) {
 		document.getElementById("storyline").innerHTML= "You walk towards the body and find that the dead victim is none other than Hayley Smith, a famous actress. As you look around, you find a gun next to the body.";
 		document.getElementById("remind").innerHTML = "Do you want to keep the gun for evidence or go to the dectective office to search for files?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(3)' value='Keep the gun'><input type='button'  onClick='next(4)' value='Go to the office'>";
-		document.getElementById("image").setAttribute("src", "images/gun.gif");
+		document.getElementById("image").innerHTML= "<img src='images/gun.gif' alt= 'test' width= '455'>";
 		break;
 	case 3: 
 		document.getElementById("title").innerHTML= "Going Home";	
 		document.getElementById("storyline").innerHTML= "You put the shiny gun in your purse and suddenly fell very tired.";
 		document.getElementById("remind").innerHTML = "Let's get some rest and go to the detective office tomorrow.";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(5)' value='Go to detective office to search for files and more evidence'>";
-		document.getElementById("image").setAttribute("src", "images/purse.jpg");
+		document.getElementById("image").innerHTML= "<img src='images/purse.jpg' alt= 'test' width= '455'>";
 		break;
 	case 4:
 		document.getElementById("title").innerHTML= "The Phone Call";	
