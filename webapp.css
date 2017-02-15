@@ -1,21 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
+
+/*Background Page*/
 .page{
 	color: black;
-	background-color: #BEF3F5;
+	background-color:#573D61;
+	
 }
-
+/*Storyline*/
 .storyline{
-	color: black;
+	color: #B2EDFF;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 }
-
+/*Picture*/
 .picture{
 	margin-left: 300px;	 
 }
 
-.choices{
-}
-
+/*button*/
 .button{
+	width: 60px;
+	height: 40px;
+	border: none;
+	border-radius: 80px;
+	margin-left: 17px;
+	cursor: pointer;
+	border-top: 2px solid transparent;
+	color:#00ABFF;
 
 }
+	
