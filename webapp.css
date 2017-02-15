@@ -4,7 +4,7 @@
 /*Background Page*/
 .page{
 	color: black;
-	background-color:#573D61;
+	background-color:#745282;
 	
 }
 /*Storyline*/
@@ -27,7 +27,7 @@ input {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 10px 20px;
+    margin: 15px 25px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
