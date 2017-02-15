@@ -8,7 +8,7 @@ function next(x) {
 		document.getElementById("title").innerHTML= "The Night At Central Park";
 		document.getElementById("stories").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the disstance with a shiny black gun, a model rare to find.";
 		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your dectective colleagues?";
-		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'><input type='button'  onClick='next(2)' value='Call your colleagues'>";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'><input type='button'  onClick='next(4)' value='Call your colleagues'>";
 		document.getElementById("image").setAttribute("src", "images/shadow1.jpg");
 		break;
 		
@@ -24,6 +24,13 @@ function next(x) {
 		document.getElementById("stories").innerHTML= "You put the shiny gun in your purse and suddenly fell very tired.";
 		document.getElementById("remind").innerHTML = "Let's get some rest and go to the detective office tomorrow.";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(5)' value='Go to detective office to search for files and more evidence'>";
+		document.getElementById("image").setAttribute("src", "images/purse.jpg");
+		break;
+	case 4:
+		document.getElementById("title").innerHTML= "The Phone Call";	
+		document.getElementById("stories").innerHTML= "You call your colleagues to make sure of what you're seeing. Dectective Joe picks up the phone and you describe what you saw and your location. There is a long pause, then he tells you to come to the office for further investigation.";
+		document.getElementById("remind").innerHTML = "Do you want to go to the office or get some rest?";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(8)' value='Go to the office'> <input type='button' onClick='next( )' value= 'Get some rest and go tomorrow'>";
 		document.getElementById("image").setAttribute("src", "images/purse.jpg");
 		break;
 	case 5: 
@@ -48,6 +55,14 @@ function next(x) {
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the story'>";
 	document.getElementById("image").setAttribute("src", "images/trophy.png");
 	break;
+	
+	case 8:
+	document.getElementById("title").innerHTML= "The Truth";	
+		document.getElementById("stories").innerHTML= "You go to your office and meet one of your colleagues, Dectective Joe. You tell him what you had seen. You also mention Hayley Smith's dead body (the one you saw on the road). He asks you if you have any evidence, but you remember that you left it behind. He says that it might be hard to solve the case since there is no evidence, but he says that there may be some footage on the security cameras. He also says to tell your boss, Dectective Patty, as soon as you find the killer. You tell him the location and find the footage. You saw a streak of red hair from the black figure that is holding a gun and running away.";
+		document.getElementById("remind").innerHTML = "Do you want to investigate further with the footage, or search for other evidence.";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(9)' value='Investigate'> <input type='button' onClick='next( )' value='Search for evidence'>";
+		document.getElementById("image").setAttribute("src", "images/reginaWright.jpg");
+		break;
 	
 		}
 	}
