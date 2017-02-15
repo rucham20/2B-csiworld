@@ -18,15 +18,11 @@
 }
 
 /*button*/
-.button{
-	width: 60px;
-	height: 40px;
-	border: none;
-	border-radius: 80px;
-	margin-left: 17px;
-	cursor: pointer;
-	border-top: 2px solid transparent;
-	color:#00ABFF;
+.input{
+	height:60px;
+	width:100px;
+	color: #21DFB2;
+
 
 }
 	
