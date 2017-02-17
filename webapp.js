@@ -9,7 +9,10 @@ function next(x) {
 		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the disstance with a shiny black gun, a model rare to find.";
 		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your dectective colleagues?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'> <input type='button'  onClick='next(4)' value='Call your colleagues'>";
+
 		document.getElementById("image").innerHTML= "<img src='images/shadow1.png' alt= 'test' width= '455'>";
+		document.getElementById("image").innerHTML = "<img src='images/shadow1.jpg'>";
+
 		break;
 		
 	case 2:
@@ -17,7 +20,10 @@ function next(x) {
 		document.getElementById("storyline").innerHTML= "You walk towards the body and find that the dead victim is none other than Hayley Smith, a famous actress. As you look around, you find a gun next to the body.";
 		document.getElementById("remind").innerHTML = "Do you want to keep the gun for evidence or go to the dectective office to search for files?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(3)' value='Keep the gun'><input type='button'  onClick='next(4)' value='Go to the office'>";
+
 		document.getElementById("image").innerHTML= "<img src='images/gun.gif' alt= 'test' width= '455'>";
+
+		document.getElementById("image").innerHTML="<img src='images/gun.gif'>";
 		break;
 	case 3: 
 		document.getElementById("title").innerHTML= "Going Home";	
@@ -25,6 +31,7 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Let's get some rest and go to the detective office tomorrow.";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(5)' value='Go to detective office to search for files and more evidence'>";
 		document.getElementById("image").innerHTML= "<img src='images/purse.jpg' alt= 'test' width= '455'>";
+		document.getElementById("image").innerHTML="<img src='images/purse.jpg'>";
 		break;
 	case 4:
 		document.getElementById("title").innerHTML= "The Phone Call";	
@@ -32,6 +39,7 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Do you want to go to the office or get some rest?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(8)' value='Go to the office'> <input type='button' onClick='next( )' value= 'Get some rest and go tomorrow'>";
 		document.getElementById("image").innerHTML="<img src='images/joe.png' alt='test' width='455'>";
+		document.getElementById("image").innerHTML="<img src='images/joe.png'>";
 		break;
 	case 5: 
 	document.getElementById("title").innerHTML = "The Finding of the Fingerprints";
@@ -39,6 +47,7 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Do you want to help Patty?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(6)' value='Yes!'> <input type='button' onClick='next(6)' value='No... You have other things to do.'>";
 		document.getElementById("image").innerHTML="<img src='images/fingerprint.jpg' alt='test' width='455'>";
+		document.getElementById("image").innerHTML="<img src='images/fingerprint.jpg'>";
 		break;
 	case 6:
 	document.getElementById("title").innerHTML = "Victory for All... Except for Regina";
@@ -46,6 +55,7 @@ function next(x) {
 	document.getElementById("remind").innerHTML = "Let's celebrate!!!";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(7)' value='Dance alllll night'>";
 	document.getElementById("image").innerHTML="<img src='images/jail.jpg' alt='test' width='455'>";
+	document.getElementById("image").innerHTML="<img src='images/jail.jpg'>";
 	break;
 	
 	case 7:
@@ -54,6 +64,7 @@ function next(x) {
 	document.getElementById("remind").innerHTML = "Do you want to restart the game and get a different ending?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the story'>";
 	document.getElementById("image").innerHTML="<img src='images/trophy.png' alt='test' width='455'>";
+	document.getElementById("image").innerHTML="<img src='images/trophy.png'>";
 	break;
 	
 	case 8:
@@ -62,6 +73,7 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Do you want to investigate further with the footage, or search for other evidence?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(9)' value='Investigate'> <input type='button' onClick='next(9)' value='Search for evidence'>";
 		document.getElementById("image").innerHTML="<img src='images/shadow.jpg' alt='test' width='455'>";
+		document.getElementById("image").innerHTML="<img src='images/shadow.jpg'>";
 		break;
 	case 9:
 	document.getElementById("title").innerHTML= "Suspects Found";	
@@ -69,6 +81,7 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Who do you want to investigate?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(10)' value='Susan Johnson'> <input type='button' onClick='next(11)' value='Katie Rose'> <input type='button' onClick= 'next(12)' value='Regina Wright'>";
 		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg' alt='test' width='455'><img src='images/katieRose.jpg' alt='test' width='455'><img src='images/reginaWright.jpg' alt='test' width='455'>"; 
+		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg'><img src='images/katieRose.jpg'><img src='images/reginaWright.jpg'>"; 
 		break;
 		}
 	}
