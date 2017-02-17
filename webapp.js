@@ -64,7 +64,6 @@ function next(x) {
 	document.getElementById("remind").innerHTML = "Do you want to restart the game and get a different ending?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the story'>";
 	document.getElementById("image").innerHTML="<img src='images/trophy.png' alt='test' width='455'>";
-	document.getElementById("image").innerHTML="<img src='images/trophy.png'>";
 	break;
 	
 	case 8:
