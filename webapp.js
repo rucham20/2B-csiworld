@@ -45,7 +45,7 @@ function next(x) {
 	document.getElementById("storyline").innerHTML = "As you search for the files, Patty rushes in exclaiming that she found the killer, thanks to you. She says that the killer is none other than Hayley Smith's celebrity enemy, Regina Wright!! Patty says that she sent the police to her location to put her behind bars right away.";
 	document.getElementById("remind").innerHTML = "Let's celebrate!!!";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(7)' value='Dance alllll night'>";
-	document.getElementById("image").setAttribute("src", "images/");
+	document.getElementById("image").setAttribute("src", "images/jail.jpg");
 	break;
 	
 	case 7:
@@ -59,11 +59,17 @@ function next(x) {
 	case 8:
 	document.getElementById("title").innerHTML= "The Truth";	
 	document.getElementById("storyline").innerHTML= "You go to your office and meet one of your colleagues, Dectective Joe. You tell him what you had seen. You also mention Hayley Smith's dead body (the one you saw on the road). He asks you if you have any evidence, but you remember that you left it behind. He says that it might be hard to solve the case since there is no evidence, but he says that there may be some footage on the security cameras. He also says to tell your boss, Dectective Patty, as soon as you find the killer. You tell him the location and find the footage. You saw a streak of red hair from the black figure that is holding a gun and running away.";
-		document.getElementById("remind").innerHTML = "Do you want to investigate further with the footage, or search for other evidence.";
-		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(9)' value='Investigate'> <input type='button' onClick='next( )' value='Search for evidence'>";
-		document.getElementById("image").setAttribute("src", "images/reginaWright.jpg");
+		document.getElementById("remind").innerHTML = "Do you want to investigate further with the footage, or search for other evidence?";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(9)' value='Investigate'> <input type='button' onClick='next(9)' value='Search for evidence'>";
+		document.getElementById("image").setAttribute("src", "images/shadow.jpg");
 		break;
-	
+	case 9:
+	document.getElementById("title").innerHTML= "Suspects Found";	
+	document.getElementById("storyline").innerHTML= "You suggest that th shooter would be Hayley Smith's enemies or competition. Joe agrees and pulls out files and searches the internet for Hayley's enemies with red hair. He finds a list of people that match the description. There are three match:";
+		document.getElementById("remind").innerHTML = "Who do tou want to investigate?";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(10)' value='Susan Johnson'> <input type='button' onClick='next(11)' value='Katie Rose'> <input type='button' onClick= 'next(12)' value='Regina Wright'>";
+		document.getElementById("image").setAttribute("src", "images/susanJohnson.jpg");
+		break;
 		}
 	}
 
