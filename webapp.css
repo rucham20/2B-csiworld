@@ -4,12 +4,13 @@
 /*Background Page*/
 .page{
 	color: black;
-	background-color:#573D61;
+	background-color:#8ADBCC;
 	
 }
 /*Storyline*/
 .storyline{
-	color: #B2EDFF;
+	color: #260D7F;
+	font-size:20px;
 	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 }
 /*Picture*/
@@ -18,15 +19,22 @@
 }
 
 /*button*/
-.button{
-	width: 60px;
-	height: 40px;
-	border: none;
-	border-radius: 80px;
-	margin-left: 17px;
-	cursor: pointer;
-	border-top: 2px solid transparent;
-	color:#00ABFF;
-
+input {
+    background-color: #260D7F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 25px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
-	
+
+input:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
