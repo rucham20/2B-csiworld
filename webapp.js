@@ -81,7 +81,7 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Who do you want to investigate?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(10)' value='Susan Johnson'> <input type='button' onClick='next(11)' value='Katie Rose'> <input type='button' onClick= 'next(12)' value='Regina Wright'>";
 		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg' alt='test' width='455'><img src='images/katieRose.jpg' alt='test' width='455'><img src='images/reginaWright.jpg' alt='test' width='455'>"; 
-		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg'><img src='images/katieRose.jpg'><img src='images/reginaWright.jpg'>"; 
+		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg' alt='test' width ='455'><img src='images/katieRose.jpg' alt='test' width='455'><img src='images/reginaWright.jpg' alt='test' width='455'>"; 
 		break;
 		}
 	}
