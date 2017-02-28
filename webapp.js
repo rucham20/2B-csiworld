@@ -6,7 +6,7 @@ function next(x) {
 	case 1:
 		var name = prompt("What do you want your main character's name to be");
 		document.getElementById("title").innerHTML= "The Night At Central Park";
-		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the disstance with a shiny black gun, a model rare to find.";
+		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the distance with a shiny black gun, a model rare to find.";
 		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your dectective colleagues?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'> <input type='button'  onClick='next(4)' value='Call your colleagues'>";
 
@@ -37,7 +37,7 @@ function next(x) {
 		document.getElementById("title").innerHTML= "The Phone Call";	
 		document.getElementById("storyline").innerHTML= "You call your colleagues to make sure of what you're seeing. Dectective Joe picks up the phone and you describe what you saw and your location. There is a long pause, then he tells you to come to the office for further investigation.";
 		document.getElementById("remind").innerHTML = "Do you want to go to the office or get some rest?";
-		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(8)' value='Go to the office'> <input type='button' onClick='next( )' value= 'Get some rest and go tomorrow'>";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(8)' value='Go to the office'> <input type='button' onClick='next(14)' value= 'Get some rest and go tomorrow'>";
 		document.getElementById("image").innerHTML="<img src='images/joe.png' alt='test' width='455'>";
 		document.getElementById("image").innerHTML="<img src='images/joe.png'>";
 		break;
@@ -64,7 +64,6 @@ function next(x) {
 	document.getElementById("remind").innerHTML = "Do you want to restart the game and get a different ending?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the story'>";
 	document.getElementById("image").innerHTML="<img src='images/trophy.png' alt='test' width='455'>";
-	document.getElementById("image").innerHTML="<img src='images/trophy.png'>";
 	break;
 	
 	case 8:
@@ -81,8 +80,64 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Who do you want to investigate?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(10)' value='Susan Johnson'> <input type='button' onClick='next(11)' value='Katie Rose'> <input type='button' onClick= 'next(12)' value='Regina Wright'>";
 		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg' alt='test' width='455'><img src='images/katieRose.jpg' alt='test' width='455'><img src='images/reginaWright.jpg' alt='test' width='455'>"; 
-		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg' alt='test' width ='455'><img src='images/katieRose.jpg' alt='test' width='455'><img src='images/reginaWright.jpg' alt='test' width='455'>"; 
 		break;
+	case 10:
+	document.getElementById("title").innerHTML = "Susan";
+	document.getElementById("storyline").innerHTML = "You decide to look at the files for Susan Johnson. Dectective Joe tells you that he found out that she was inhured and was in the hospital the same time as the shooting. You know that Susan can't be the murderer.";
+	document.getElementById("remind").innerHTML = "Who do you want to investigate next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(11)' value='Katie Rose'><input type='button' onClick='next(12)' value='Regina Wright'>";
+	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
+	break;
+case 11:
+	document.getElementById("title").innerHTML = "Katie";
+	document.getElementById("storyline").innerHTML = "You look at files on Katie Rose. After searching, you find that she had a concert the same date and time the shooting had occured. Now you know what Katie Rose isn't the murderer.";
+	document.getElementById("remind").innerHTML = "Who do you want to investigate next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(10)' value='Susan Johnson'><input type='button' onClick='next(12)' value='Regina Wright'>";
+	document.getElementById("image").innerHTML="<img src='images/concert.jpg' alt='test' width='455'>";
+	break;
+case 12:
+	document.getElementById("title").innerHTML = "Regina";
+	document.getElementById("storyline").innerHTML = "As you search for Regina Wright's files, you find that she was in town near Central Park the day of the shooting. You look at the items she recently purchased and find the same gun model that you had seen at the crime scene. All evidence points to Regina Wright being the murder.";
+	document.getElementById("remind").innerHTML = "What do you do next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(13)' value='Tell Dectective Patty of your finding.'>";
+	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
+	break;
+case 13:
+	document.getElementById("title").innerHTML = "Arrest";
+	document.getElementById("storyline").innerHTML = "When you tell Patty, she has doubts of your findings. She then does further research herself. The next day, she comes to you and says that you were right. She informs you that she sent the police to Regina's location to put her behind bars right away!";
+	document.getElementById("remind").innerHTML = "It is time to celebrate";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(7)' value='Dance allllll night'>";
+	document.getElementById("image").innerHTML="<img src='images/jail.jpg' alt='test' width='455'>";
+	break;
+case 14:
+	document.getElementById("title").innerHTML = "The Shooting";
+	document.getElementById("storyline").innerHTML = "You go back to your apartment and immediately fall asleep. The next day, you wake up and go to your office to tell your colleagues of what you saw last night. Your boss, Dectective Patty, rushes into the room and says that she has discovered another shooting near Central Park, the same location where Hayley Smith, the body you had seen, was killed. You look at the footage and find a gun exactly like the one you had seen the other night. Tou wonder if the two shooters are the same.";
+	document.getElementById("remind").innerHTML = "Which case do you want to investigate next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(15)' value='Stick to the previous case'><input type='button' onClick='next()' value='Go to the new case, thinking that there is a connection between the shooters'>";
+	document.getElementById("image").innerHTML="<img src='images/park.jpg' alt='test' width='455'>";
+	break;
+case 15:
+	document.getElementById("title").innerHTML = "Consequence";
+	document.getElementById("storyline").innerHTML = "You decide to stay with your previous case, thinking there is no connection between the shooters. You go to Detective Joe to ask him for any evidence he has. He gets upset since you didn't get any evidence before from the crime scene or asked for help right away. He says that he doesn't want to help you on this case, and that he has many other cases to work on.";
+	document.getElementById("remind").innerHTML = "What do you do next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(16)' value='Apologize for your lack of evidence'><input type='button' onClick='next(17)' value='Argue back to defend yourself'>";
+	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
+	break;
+case 16:
+	document.getElementById("title").innerHTML = "The End";
+	document.getElementById("storyline").innerHTML = "You get angry with Dectective Joe and say that you were very tired, and could have made more mistakes since you had no idea what to do. You also say that this is your first big case, so he has no right to judge you. Dectectivve Joe gets annoyed and starts yelling at you/ Even worse, he goes to Dectective patty's office and reports how slow your progress is. She comes to see you and you try to defend yourself. However, Patty agrees with Joe and says that you don't have the potential to be a good dectective, and that your first priority should be your job. She also explains that you shouldn't have yelled at your colleagues, so she fires you.";
+	document.getElementById("remind").innerHTML = " ";
+	document.getElementById("buttons").innerHTML = " ";
+	document.getElementById("image").innerHTML=" ";
+	break;
+case 17:
+	document.getElementById("title").innerHTML = "The End";
+	document.getElementById("storyline").innerHTML = "You apologize to Joe, asking him if he could still help you despite your carelessness. He forgives you. Patty then comes in and asks how much progress you made on the case. You sigh and tell her your situation. She get upset and says that you don't have the potential to work on such an important case. She lowers your position to dectective in training.";
+	document.getElementById("remind").innerHTML = " ";
+	document.getElementById("buttons").innerHTML = " ";
+	document.getElementById("image").innerHTML=" ";
+	break;
+
 		}
 	}
 
