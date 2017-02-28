@@ -80,8 +80,14 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Who do you want to investigate?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(10)' value='Susan Johnson'> <input type='button' onClick='next(11)' value='Katie Rose'> <input type='button' onClick= 'next(12)' value='Regina Wright'>";
 		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg' alt='test' width='455'><img src='images/katieRose.jpg' alt='test' width='455'><img src='images/reginaWright.jpg' alt='test' width='455'>"; 
-		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg' alt='test' width ='455'><img src='images/katieRose.jpg' alt='test' width='455'><img src='images/reginaWright.jpg' alt='test' width='455'>"; 
 		break;
+	case 10:
+	document.getElementById("title").innerHTML = "Susan";
+	document.getElementById("storyline").innerHTML = "You decide to look at the files for Susan JOhnson. Dectective Joe tells you that he found out that she was inhured and was in the hospital the same time as the shooting. You know that Susan can't be the murderer.";
+	document.getElementById("remind").innerHTML = "Who do you want to investigate next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(11)' value='Katie Rose'><input type='button' onClick='next(12)' value='Regina Wright'>";
+	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
+	break;
 		}
 	}
 
