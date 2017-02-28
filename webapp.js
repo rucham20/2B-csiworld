@@ -37,7 +37,7 @@ function next(x) {
 		document.getElementById("title").innerHTML= "The Phone Call";	
 		document.getElementById("storyline").innerHTML= "You call your colleagues to make sure of what you're seeing. Dectective Joe picks up the phone and you describe what you saw and your location. There is a long pause, then he tells you to come to the office for further investigation.";
 		document.getElementById("remind").innerHTML = "Do you want to go to the office or get some rest?";
-		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(8)' value='Go to the office'> <input type='button' onClick='next( )' value= 'Get some rest and go tomorrow'>";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(8)' value='Go to the office'> <input type='button' onClick='next(14)' value= 'Get some rest and go tomorrow'>";
 		document.getElementById("image").innerHTML="<img src='images/joe.png' alt='test' width='455'>";
 		document.getElementById("image").innerHTML="<img src='images/joe.png'>";
 		break;
@@ -109,11 +109,11 @@ case 13:
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(7)' value='Dance allllll night'>";
 	document.getElementById("image").innerHTML="<img src='images/jail.jpg' alt='test' width='455'>";
 	break;
-case 10:
-	document.getElementById("title").innerHTML = "Susan";
-	document.getElementById("storyline").innerHTML = "You decide to look at the files for Susan JOhnson. Dectective Joe tells you that he found out that she was inhured and was in the hospital the same time as the shooting. You know that Susan can't be the murderer.";
-	document.getElementById("remind").innerHTML = "Who do you want to investigate next?";
-	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(11)' value='Katie Rose'><input type='button' onClick='next(12)' value='Regina Wright'>";
+case 14:
+	document.getElementById("title").innerHTML = "The Shooting";
+	document.getElementById("storyline").innerHTML = "You go back to your apartment and immediately fall asleep. The next day, you wake up and go to your office to tell your colleagues of what you saw last night. Your boss, Dectective Patty, rushes into the room and says that she has discovered another shooting near Central Park, the same location where Hayley Smith, the body you had seen, was killed. You look at the footage and find a gun exactly like the one you had seen the other night. Tou wonder if the two shooters are the same.";
+	document.getElementById("remind").innerHTML = "Which case do you want to investigate next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(15)' value='Stick to the previous case'><input type='button' onClick='next()' value='Go to the new case, thinking that there is a connection between the shooters'>";
 	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
 	break;
 
