@@ -6,7 +6,7 @@ function next(x) {
 	case 1:
 		var name = prompt("What do you want your main character's name to be");
 		document.getElementById("title").innerHTML= "The Night At Central Park";
-		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the disstance with a shiny black gun, a model rare to find.";
+		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the distance with a shiny black gun, a model rare to find.";
 		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your dectective colleagues?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'> <input type='button'  onClick='next(4)' value='Call your colleagues'>";
 
@@ -83,11 +83,40 @@ function next(x) {
 		break;
 	case 10:
 	document.getElementById("title").innerHTML = "Susan";
+	document.getElementById("storyline").innerHTML = "You decide to look at the files for Susan Johnson. Dectective Joe tells you that he found out that she was inhured and was in the hospital the same time as the shooting. You know that Susan can't be the murderer.";
+	document.getElementById("remind").innerHTML = "Who do you want to investigate next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(11)' value='Katie Rose'><input type='button' onClick='next(12)' value='Regina Wright'>";
+	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
+	break;
+case 11:
+	document.getElementById("title").innerHTML = "Katie";
+	document.getElementById("storyline").innerHTML = "You look at files on Katie Rose. After searching, you find that she had a concert the same date and time the shooting had occured. Now you know what Katie Rose isn't the murderer.";
+	document.getElementById("remind").innerHTML = "Who do you want to investigate next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(10)' value='Susan Johnson'><input type='button' onClick='next(12)' value='Regina Wright'>";
+	document.getElementById("image").innerHTML="<img src='images/concert.jpg' alt='test' width='455'>";
+	break;
+case 12:
+	document.getElementById("title").innerHTML = "Regina";
+	document.getElementById("storyline").innerHTML = "As you search for Regina Wright's files, you find that she was in town near Central Park the day of the shooting. You look at the items she recently purchased and find the same gun model that you had seen at the crime scene. All evidence points to Regina Wright being the murder.";
+	document.getElementById("remind").innerHTML = "What do you do next?";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(13)' value='Tell Dectective Patty of your finding.'>";
+	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
+	break;
+case 13:
+	document.getElementById("title").innerHTML = "Arrest";
+	document.getElementById("storyline").innerHTML = "When you tell Patty, she has doubts of your findings. She then does further research herself. The next day, she comes to you and says that you were right. She informs you that she sent the police to Regina's location to put her behind bars right away!";
+	document.getElementById("remind").innerHTML = "It is time to celebrate";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(7)' value='Dance allllll night'>";
+	document.getElementById("image").innerHTML="<img src='images/jail.jpg' alt='test' width='455'>";
+	break;
+case 10:
+	document.getElementById("title").innerHTML = "Susan";
 	document.getElementById("storyline").innerHTML = "You decide to look at the files for Susan JOhnson. Dectective Joe tells you that he found out that she was inhured and was in the hospital the same time as the shooting. You know that Susan can't be the murderer.";
 	document.getElementById("remind").innerHTML = "Who do you want to investigate next?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(11)' value='Katie Rose'><input type='button' onClick='next(12)' value='Regina Wright'>";
 	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
 	break;
+
 		}
 	}
 
