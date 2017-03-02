@@ -28,7 +28,7 @@ function next(x) {
 	case 3: 
 		document.getElementById("title").innerHTML= "Going Home";	
 		document.getElementById("storyline").innerHTML= "You put the shiny gun in your purse and suddenly fell very tired.";
-		document.getElementById("remind").innerHTML = "Let's get some rest and go to the detective office tomorrow.";
+		document.getElementById("remind").innerHTML = "Let's get some rest and go to the dectective office tomorrow.";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(5)' value='Go to detective office to search for files and more evidence'>";
 		document.getElementById("image").innerHTML= "<img src='images/purse.jpg' alt= 'test' width= '455'>";
 		document.getElementById("image").innerHTML="<img src='images/purse.jpg'>";
@@ -39,15 +39,13 @@ function next(x) {
 		document.getElementById("remind").innerHTML = "Do you want to go to the office or get some rest?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(8)' value='Go to the office'> <input type='button' onClick='next(14)' value= 'Get some rest and go tomorrow'>";
 		document.getElementById("image").innerHTML="<img src='images/joe.png' alt='test' width='455'>";
-		document.getElementById("image").innerHTML="<img src='images/joe.png'>";
 		break;
 	case 5: 
 	document.getElementById("title").innerHTML = "The Finding of the Fingerprints";
-	document.getElementById("storyline").innerHTML= "You go back to your apartment and immediately fall asleep. The next day, you wake up and go to your office to tell your colleagues and boss, Dectective Patty, what you saw last night. You then remember the gun you had kept in your purse and give it to the boss. You hand the gun over, asking her to dust for fingerprints of the shooter. She is delighted to know that you have the most valuable evidenc in your possession. She explains that the fingerprint will lead right to the killer.";
+	document.getElementById("storyline").innerHTML= "You go back to your apartment and immediately fall asleep. The next day, you wake up and go to your office to tell your colleagues and boss, Dectective Patty, what you saw last night. You then remember the gun you had kept in your purse and give it to the boss. You hand the gun over, asking her to dust for fingerprints of the shooter. She is delighted to know that you have the most valuable evidence in your possession. She explains that the fingerprint will lead right to the killer.";
 		document.getElementById("remind").innerHTML = "Do you want to help Patty?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(6)' value='Yes!'> <input type='button' onClick='next(6)' value='No... You have other things to do.'>";
 		document.getElementById("image").innerHTML="<img src='images/fingerprint.jpg' alt='test' width='455'>";
-		document.getElementById("image").innerHTML="<img src='images/fingerprint.jpg'>";
 		break;
 	case 6:
 	document.getElementById("title").innerHTML = "Victory for All... Except for Regina";
@@ -55,7 +53,6 @@ function next(x) {
 	document.getElementById("remind").innerHTML = "Let's celebrate!!!";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(7)' value='Dance alllll night'>";
 	document.getElementById("image").innerHTML="<img src='images/jail.jpg' alt='test' width='455'>";
-	document.getElementById("image").innerHTML="<img src='images/jail.jpg'>";
 	break;
 	
 	case 7:
@@ -99,7 +96,7 @@ case 12:
 	document.getElementById("storyline").innerHTML = "As you search for Regina Wright's files, you find that she was in town near Central Park the day of the shooting. You look at the items she recently purchased and find the same gun model that you had seen at the crime scene. All evidence points to Regina Wright being the murder.";
 	document.getElementById("remind").innerHTML = "What do you do next?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(13)' value='Tell Dectective Patty of your finding.'>";
-	document.getElementById("image").innerHTML="<img src='images/hospital.jpg' alt='test' width='455'>";
+	document.getElementById("image").innerHTML="<img src='images/reginaWright.jpg' alt='test' width='455'>";
 	break;
 case 13:
 	document.getElementById("title").innerHTML = "Arrest";
