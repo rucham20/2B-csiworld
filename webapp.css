@@ -1,3 +1,55 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*Background Page*/
+.page{
+	color: black;
+	background-color:#8ADBCC;
+	
+}
+/*Storyline*/
+.storyline{
+	color: #260D7F;
+	font-size:20px;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+/*Picture*/
+.picture{
+	margin-left: 20%;	 
+}
+
+/*button*/
+input {
+    background-color: #260D7F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 25px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+input:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+img {
+	width: 30%;
+}
+
+#storyline, #title, #remind{
+	background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4px;
+	border: outset;
+	border-color: #1095C4;
+	border-radius: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width:75%;
+}
