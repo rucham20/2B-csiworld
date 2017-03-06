@@ -137,7 +137,7 @@ case 18:
 	document.getElementById("storyline").innerHTML = "You think there is a connection between the shooters, so you decide to take on the new case. You tell Dectective Patty about what you had seen last night, telling her that there could be a connection between the shootings. She agrees and is happy that you told her right away. She wants you to investigate the footage and check for files.";
 	document.getElementById("remind").innerHTML = "Let's start investigating!";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(19)' value='Look at the footage'>";
-	document.getElementById("image").innerHTML=" ";
+	document.getElementById("image").innerHTML="<img src='images/happy.jpg' alt='test' width='455'> ";
 	break;
 case 19:
 	document.getElementById("title").innerHTML = "Footage Revealed";
