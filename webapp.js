@@ -90,7 +90,7 @@ case 11:
 	break;
 case 12:
 	document.getElementById("title").innerHTML = "Regina";
-	document.getElementById("storyline").innerHTML = "As you search for Regina Wright's files, you find that she was in town near Central Park the day of the shooting. You look at the items she recently purchased and find the same gun model that you had seen at the crime scene. All evidence points to Regina Wright being the murder.";
+	document.getElementById("storyline").innerHTML = "As you search for Regina Wright's files, you find that she was in town near Central Park the day of the shooting. You look at the items she recently purchased and find the same gun model that you had seen at the crime scene. All evidence points to Regina Wright being the murderer.";
 	document.getElementById("remind").innerHTML = "What do you do next?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(13)' value='Tell Dectective Patty of your finding.'>";
 	document.getElementById("image").innerHTML="<img src='images/reginaWright.jpg' alt='test' width='455'>";
@@ -104,7 +104,7 @@ case 13:
 	break;
 case 14:
 	document.getElementById("title").innerHTML = "The Shooting";
-	document.getElementById("storyline").innerHTML = "You go back to your apartment and immediately fall asleep. The next day, you wake up and go to your office to tell your colleagues of what you saw last night. Your boss, Dectective Patty, rushes into the room and says that she has discovered another shooting near Central Park, the same location where Hayley Smith, the body you had seen, was killed. You look at the footage and find a gun exactly like the one you had seen the other night. Tou wonder if the two shooters are the same.";
+	document.getElementById("storyline").innerHTML = "You go back to your apartment and immediately fall asleep. The next day, you wake up and go to your office to tell your colleagues of what you saw last night. Your boss, Dectective Patty, rushes into the room and says that she has discovered another shooting near Central Park, the same location where Hayley Smith, the body you had seen, was killed. You look at the footage and find a gun exactly like the one you had seen the other night. You wonder if the two shooters are the same.";
 	document.getElementById("remind").innerHTML = "Which case do you want to investigate next?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(15)' value='Stick to the previous case'><input type='button' onClick='next(18)' value='Go to the new case, thinking that there is a connection between the shooters'>";
 	document.getElementById("image").innerHTML="<img src='images/park.jpg' alt='test' width='455'>";
