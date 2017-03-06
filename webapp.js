@@ -146,7 +146,10 @@ case 19:
 	document.getElementById("image").innerHTML="<img src='images/shadow.jpg' alt='test' width='455'>";
 	break;
 		}
+	save_cookies(x);
 	}
+	
+window.onload=load_cookies;
 
 function save_cookies(caseStr) {
 	var d = new Date();
@@ -157,28 +160,37 @@ function save_cookies(caseStr) {
 	document.cookie = "case=" + caseStr + "; " + expires;
 }
 
+// "case=1;sdlfkjasdlfkj=asdflkjsdf;asdf=asdf;"
+// ["case=1", "sdlfkjasdlfkj=asdflkjsdf", "asdf=asdf"]
+	// ["case", "1"]
+	// var key = "case";
+	// var value = "1";
+	// changeDisplay(value);
+
+
+
 function load_cookies() {
 	var str = document.cookie;
 	// -> "case=1;sdlfkjasdlfkj=asdflkjsdf;asdf=asdf;"
 	// split() it into an array:
-	var cookieArray = str.split(" ")
+	var cookieArray = str.split("; ");
 	// -> ["case=1", "sdlfkjasdlfkj=asdflkjsdf", "asdf=asdf"]
 	// Loop through each item in the array:
-	/* for( var i = 0; .......... ) {
+	for( var i = 0; i < cookieArray.length; i++ ) {
 		// split each item into a temporary array:
-		var pairArray = .......
-		// -> ["case", "path1"]
+		var pairArray = cookieArray[i].split("=");
+		// -> ["case", "1"]
 		
 		// Extract the key-value pair
 		var key = pairArray[0];
 		// -> "case"
 		var value = pairArray[1];
-		// -> "path1"
+		// -> "1"
 		
 		// Check which key you have using an if
 		if(key == "case") {
 			// Pass that value to changeDisplay():
 			changeDisplay(value);
 		}
-	}*/	
+	}	
 }
