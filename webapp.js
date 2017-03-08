@@ -119,7 +119,7 @@ case 15:
 case 16:
 	prompt("Sorry, your ending isn't the best.... Try again?");
 	document.getElementById("title").innerHTML = "The End";
-	document.getElementById("storyline").innerHTML = "You get angry with Dectective Joe and say that you were very tired, and could have made more mistakes since you had no idea what to do. You also say that this is your first big case, so he has no right to judge you. Dectectivve Joe gets annoyed and starts yelling at you/ Even worse, he goes to Dectective patty's office and reports how slow your progress is. She comes to see you and you try to defend yourself. However, Patty agrees with Joe and says that you don't have the potential to be a good dectective, and that your first priority should be your job. She also explains that you shouldn't have yelled at your colleagues, so she fires you.";
+	document.getElementById("storyline").innerHTML = "You get angry with Dectective Joe and say that you were very tired, and could have made more mistakes since you had no idea what to do. You also say that this is your first big case, so he has no right to judge you. Dectective Joe gets annoyed and starts yelling at you/ Even worse, he goes to Dectective patty's office and reports how slow your progress is. She comes to see you and you try to defend yourself. However, Patty agrees with Joe and says that you don't have the potential to be a good dectective, and that your first priority should be your job. She also explains that you shouldn't have yelled at your colleagues, so she fires you.";
 	document.getElementById("remind").innerHTML = " ";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the Story'> ";
 	document.getElementById("image").innerHTML=" ";
