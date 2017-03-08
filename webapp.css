@@ -6,13 +6,12 @@
 	color: black;
 	background-image: url("images/office.jpg");
 	background-size: 110%;
-	
-}
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	}
 /*Storyline*/
-.storyline{
-	color: #260D7F;
-	font-size:20px;
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+#storyline{
+		font-size:25px;
+	
 }
 /*Picture*/
 .picture{
@@ -58,3 +57,4 @@ img {
 #footer{
 	color:white;
 }
+
