@@ -53,7 +53,7 @@ function next(x) {
 	case 7:
 	alert("Congratulations, Dectective " + name + "! You lived a succesful life.");
 	document.getElementById("title").innerHTML = "The End";
-	document.getElementById("storyline").innerHTML = "That night, you, Patty and the rest of the detectives from your team go to a restaurant to celebrate your success. While you are eating, you look at the TV and find Regina's picture all over the screen. Next to that you find your picture with a title of 'Our Famous Dectective!' Right then Patty gets everyone's attention and announces that you are promoted to head dectective! You are thrilled by this news. Many successful years later, you become a world famous dectective and live to your dreams.";
+	document.getElementById("storyline").innerHTML = "That night, you, Patty and the rest of the detectives from your team go to a restaurant to celebrate your success. While you are eating, you look at the TV and find Regina's picture all over the screen. Next to that you find your picture with a title of 'Our Famous Dectective'! Right then Patty gets everyone's attention and announces that you are promoted to head dectective! You are thrilled by this news. Many successful years later, you become a world famous dectective and live to your dreams.";
 	document.getElementById("remind").innerHTML = "Do you want to restart the game and get a different ending?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the story'>";
 	document.getElementById("image").innerHTML="<img src='images/trophy.png' alt='test' width='455'>";
@@ -158,6 +158,7 @@ function save_cookies(caseStr) {
 	
 	// Store your cookies like so:
 	document.cookie = "case=" + caseStr + "; " + expires;
+	//alert(document.cookie);
 }
 
 // "case=1;sdlfkjasdlfkj=asdflkjsdf;asdf=asdf;"
@@ -184,13 +185,12 @@ function load_cookies() {
 		// Extract the key-value pair
 		var key = pairArray[0];
 		// -> "case"
-		var value = pairArray[1];
+		var value = Number(pairArray[1]);
 		// -> "1"
-		
 		// Check which key you have using an if
-		if(key == "case") {
+		if(key === "case") {
 			// Pass that value to changeDisplay():
-			changeDisplay(value);
+			next(value);
 		}
 	}	
 }
