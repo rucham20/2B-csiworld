@@ -3,6 +3,14 @@ var name = "";
 //"Next" button
 function next(x) {
 	switch (x) {
+	case 0:
+		document.getElementById("title").innerHTML= "Welcome to CSI World";
+		document.getElementById("storyline").innerHTML= "Do you want to continue?.";
+		document.getElementById("remind").innerHTML = "Remember, every choice affects your fate!";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Click here to Start!'>";
+		document.getElementById("image").innerHTML="<img src='images/dectective.png' alt='test' width='455'>";
+		break;
+	
 	case 1:
 		name = prompt("What do you want your main character's name to be?");
 		document.getElementById("title").innerHTML= "The Night At Central Park";
@@ -52,7 +60,7 @@ function next(x) {
 	document.getElementById("title").innerHTML = "The End";
 	document.getElementById("storyline").innerHTML = "That night, you, Patty and the rest of the detectives from your team go to a restaurant to celebrate your success. While you are eating, you look at the TV and find Regina's picture all over the screen. Next to that you find your picture with a title of 'Our Famous Dectective'! Right then Patty gets everyone's attention and announces that you are promoted to head dectective! You are thrilled by this news. Many successful years later, you become a world famous dectective and live to your dreams.";
 	document.getElementById("remind").innerHTML = "Congratulations, Dectective " + name + "! You lived a succesful life.";
-	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the story'>";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(0)' value='Restart the story'>";
 	document.getElementById("image").innerHTML="<img src='images/trophy.png' alt='test' width='455'>";
 	break;
 	
@@ -116,14 +124,14 @@ case 16:
 	document.getElementById("title").innerHTML = "The End";
 	document.getElementById("storyline").innerHTML = "You get angry with Dectective Joe and say that you were very tired, and could have made more mistakes since you had no idea what to do. You also say that this is your first big case, so he has no right to judge you. Dectective Joe gets annoyed and starts yelling at you. Even worse, he goes to Dectective Patty's office and reports how slow your progress is. She comes to see you and you try to defend yourself. However, Patty agrees with Joe and says that you don't have the potential to be a good dectective, and that your first priority should be your job. She also explains that you shouldn't have yelled at your colleagues, so she fires you.";
 	document.getElementById("remind").innerHTML = "Sorry, " + name + " ending isn't the best.... Try again?";
-	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the Story'> ";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(0)' value='Restart the Story'> ";
 	document.getElementById("image").innerHTML="<img src='images/fired.jpg' alt='fired' width='455'>";
 	break;
 case 17:
 	document.getElementById("title").innerHTML = "The End";
 	document.getElementById("storyline").innerHTML = "You apologize to Joe, asking him if he could still help you despite your carelessness. He forgives you. Patty then comes in and asks how much progress you made on the case. You sigh and tell her your situation. She get upset and says that you don't have the potential to work on such an important case. She lowers your position to dectective in training.";
 	document.getElementById("remind").innerHTML = name + " didn't have a successful career... Let's do it again!";
-	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the Story'>";
+	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(0)' value='Restart the Story'>";
 	document.getElementById("image").innerHTML="<img src='images/sad.jpg' alt='happy' width='455'>";
 	break;
 case 18:
