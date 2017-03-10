@@ -4,6 +4,7 @@ CsiWorld
 
 ## Description
 Text Adventure/Interactive Crime Story
+
 <!--
 ## FAQs
 
@@ -12,27 +13,22 @@ Insert answer here.
 
 ### Insert question here?
 Insert answer here.
-
+-->
 ## Changelog
 
 ### Version 1.1
 
 #### Bug fixes
- * Fixed thing
- * Fixed other thing
+ * Fixed typos
+ * Fixed images
 
 #### Changes
- * Added thing
- * Removed thing
- * Added a group of related things:
-   * one
-   * two
-   * three
-   * four
- * If you want to be fancy, you can use a...
-   * + to indicate something added and a...
-   * - to indicate something removed, just be careful with your markdown syntax!
--->
+ * Added a background image
+    *removed solid color background
+ * Copyright
+ * Cookies
+ * A border box for the texts
+
 ### Version 1.0
 This is our initial release. We hope you enjoy it!
 
