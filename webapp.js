@@ -6,7 +6,7 @@ function next(x) {
 	case 1:
 		name = prompt("What do you want your main character's name to be?");
 		document.getElementById("title").innerHTML= "The Night At Central Park";
-		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the distance with a shiny black gun, a model rare to find.";
+		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and find a body covered with blood and see a shadow running in the distance with a shiny black gun, a model rare to find.";
 		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your dectective colleagues?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'> <input type='button'  onClick='next(4)' value='Call your colleagues'>";
 		document.getElementById("image").innerHTML="<img src='images/shadow1.jpg' alt='test' width='455'>";
@@ -58,7 +58,7 @@ function next(x) {
 	
 	case 8:
 	document.getElementById("title").innerHTML= "The Truth";	
-	document.getElementById("storyline").innerHTML= "You go to your office and meet one of your colleagues, Dectective Joe. You tell him what you had seen. You also mention Hayley Smith's dead body (the one you saw on the road). He asks you if you have any evidence, but you remember that you left it behind. He says that it might be hard to solve the case since there is no evidence, but he says that there may be some footage on the security cameras. He also says to tell your boss, Dectective Patty, as soon as you find the killer. You tell him the location and find the footage. You saw a streak of red hair from the black figure that is holding a gun and running away.";
+	document.getElementById("storyline").innerHTML= "You go to your office and meet one of your colleagues, Dectective Joe. You tell him what you had seen. You also mention Hayley Smith's dead body (the one you saw on the road). He asks you if you have any evidence, but you remember that you left the gun behind. He says that it might be hard to solve the case since there is no evidence, but he says that there may be some footage on the security cameras. He also says to tell your boss, Dectective Patty, as soon as you find the killer. You tell him the location and find the footage. You saw a streak of red hair from the black figure that is holding a gun and running away.";
 		document.getElementById("remind").innerHTML = "Do you want to investigate further with the footage, or search for other evidence?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(9)' value='Investigate'> <input type='button' onClick='next(9)' value='Search for evidence'>";
 		document.getElementById("image").innerHTML="<img src='images/shadow.jpg' alt='test' width='455'>";
