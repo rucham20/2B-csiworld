@@ -4,14 +4,14 @@
 /*Background Page*/
 .page{
 	color: black;
-	background-color:#8ADBCC;
-	
-}
+	background-image: url("images/office.jpg");
+	background-size: 110%;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	}
 /*Storyline*/
-.storyline{
-	color: #260D7F;
-	font-size:20px;
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+#storyline{
+		font-size:25px;
+	
 }
 /*Picture*/
 .picture{
@@ -23,7 +23,7 @@ input {
     background-color: #260D7F; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 25px;
     text-align: center;
 	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
     text-decoration: none;
@@ -52,4 +52,4 @@ img {
 	padding-left: 5px;
 	padding-right: 5px;
 	width:75%;
-}
+
