@@ -46,7 +46,7 @@ function next(x) {
 	document.getElementById("storyline").innerHTML= "You go back to your apartment and immediately fall asleep. The next day, you wake up and go to your office to tell your colleagues and boss, Dectective Patty, what you saw last night. You then remember the gun you had kept in your purse and give it to the boss. You hand the gun over, asking her to dust for fingerprints of the shooter. She is delighted to know that you have the most valuable evidence in your possession. She explains that the fingerprint will lead right to the killer.";
 		document.getElementById("remind").innerHTML = "Do you want to help Patty?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(6)' value='Yes!'> <input type='button' onClick='next(6)' value='No... You have other things to do.'>";
-		document.getElementById("image").innerHTML="<img src='images/fingerprint.jpg' alt='test' width='455'>";
+		document.getElementById("image").innerHTML="<img src='images/fingerprint2.jpg' alt='test' width='455'>";
 		break;
 	case 6:
 	document.getElementById("title").innerHTML = "Victory for All... Except for Regina";
