@@ -5,7 +5,7 @@ function next(x) {
 	switch (x) {
 	case 0:
 		document.getElementById("title").innerHTML= "Welcome to CSI World";
-		document.getElementById("storyline").innerHTML= "Do you want to continue?.";
+		document.getElementById("storyline").innerHTML= "Do you want to continue?";
 		document.getElementById("remind").innerHTML = "Remember, every choice affects your fate!";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Click here to Start!'>";
 		document.getElementById("image").innerHTML="<img src='images/dectective.png' alt='test' width='455'>";
