@@ -6,7 +6,7 @@ function next(x) {
 	case 1:
 		name = prompt("What do you want your main character's name to be?");
 		document.getElementById("title").innerHTML= "The Night At Central Park";
-		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and finds a body covered with blood and see a shadow running in the distance with a shiny black gun, a model rare to find.";
+		document.getElementById("storyline").innerHTML= "You are walking back from your dectective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and find a body covered with blood and see a shadow running in the distance with a shiny black gun, a model rare to find.";
 		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your dectective colleagues?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'> <input type='button'  onClick='next(4)' value='Call your colleagues'>";
 		document.getElementById("image").innerHTML="<img src='images/shadow1.jpg' alt='test' width='455'>";
@@ -49,17 +49,16 @@ function next(x) {
 	break;
 	
 	case 7:
-	alert("Congratulations, Dectective " + name + "! You lived a succesful life.");
 	document.getElementById("title").innerHTML = "The End";
 	document.getElementById("storyline").innerHTML = "That night, you, Patty and the rest of the detectives from your team go to a restaurant to celebrate your success. While you are eating, you look at the TV and find Regina's picture all over the screen. Next to that you find your picture with a title of 'Our Famous Dectective'! Right then Patty gets everyone's attention and announces that you are promoted to head dectective! You are thrilled by this news. Many successful years later, you become a world famous dectective and live to your dreams.";
-	document.getElementById("remind").innerHTML = "Do you want to restart the game and get a different ending?";
+	document.getElementById("remind").innerHTML = "Congratulations, Dectective " + name + "! You lived a succesful life.";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the story'>";
 	document.getElementById("image").innerHTML="<img src='images/trophy.png' alt='test' width='455'>";
 	break;
 	
 	case 8:
 	document.getElementById("title").innerHTML= "The Truth";	
-	document.getElementById("storyline").innerHTML= "You go to your office and meet one of your colleagues, Dectective Joe. You tell him what you had seen. You also mention Hayley Smith's dead body (the one you saw on the road). He asks you if you have any evidence, but you remember that you left it behind. He says that it might be hard to solve the case since there is no evidence, but he says that there may be some footage on the security cameras. He also says to tell your boss, Dectective Patty, as soon as you find the killer. You tell him the location and find the footage. You saw a streak of red hair from the black figure that is holding a gun and running away.";
+	document.getElementById("storyline").innerHTML= "You go to your office and meet one of your colleagues, Dectective Joe. You tell him what you had seen. You also mention Hayley Smith's dead body (the one you saw on the road). He asks you if you have any evidence, but you remember that you left the gun behind. He says that it might be hard to solve the case since there is no evidence, but he says that there may be some footage on the security cameras. He also says to tell your boss, Dectective Patty, as soon as you find the killer. You tell him the location and find the footage. You saw a streak of red hair from the black figure that is holding a gun and running away.";
 		document.getElementById("remind").innerHTML = "Do you want to investigate further with the footage, or search for other evidence?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(9)' value='Investigate'> <input type='button' onClick='next(9)' value='Search for evidence'>";
 		document.getElementById("image").innerHTML="<img src='images/shadow.jpg' alt='test' width='455'>";
@@ -114,18 +113,16 @@ case 15:
 	document.getElementById("image").innerHTML="<img src='images/anger.jpg' alt='anger' width='455'>";
 	break;
 case 16:
-	alert("Sorry, " + name + "ending isn't the best.... Try again?");
 	document.getElementById("title").innerHTML = "The End";
 	document.getElementById("storyline").innerHTML = "You get angry with Dectective Joe and say that you were very tired, and could have made more mistakes since you had no idea what to do. You also say that this is your first big case, so he has no right to judge you. Dectective Joe gets annoyed and starts yelling at you. Even worse, he goes to Dectective Patty's office and reports how slow your progress is. She comes to see you and you try to defend yourself. However, Patty agrees with Joe and says that you don't have the potential to be a good dectective, and that your first priority should be your job. She also explains that you shouldn't have yelled at your colleagues, so she fires you.";
-	document.getElementById("remind").innerHTML = " ";
+	document.getElementById("remind").innerHTML = "Sorry, " + name + " ending isn't the best.... Try again?";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the Story'> ";
 	document.getElementById("image").innerHTML="<img src='images/fired.jpg' alt='fired' width='455'>";
 	break;
 case 17:
-	alert(name + " didn't have a successful career... Let's do it again!");
 	document.getElementById("title").innerHTML = "The End";
 	document.getElementById("storyline").innerHTML = "You apologize to Joe, asking him if he could still help you despite your carelessness. He forgives you. Patty then comes in and asks how much progress you made on the case. You sigh and tell her your situation. She get upset and says that you don't have the potential to work on such an important case. She lowers your position to dectective in training.";
-	document.getElementById("remind").innerHTML = " ";
+	document.getElementById("remind").innerHTML = name + " didn't have a successful career... Let's do it again!";
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(1)' value='Restart the Story'>";
 	document.getElementById("image").innerHTML="<img src='images/sad.jpg' alt='happy' width='455'>";
 	break;
