@@ -30,7 +30,7 @@ Insert answer here.
  * A border box for the texts
 
 ### Version 1.0
-This is our initial release. We hope you enjoyed it!
+This was our initial release. We hope you enjoyed it!
 
 ## Credits
 * Sukriti Badami
