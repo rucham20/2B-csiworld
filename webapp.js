@@ -55,7 +55,7 @@ function next(x) {
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(7)' value='Dance alllll night'>";
 	document.getElementById("image").innerHTML="<img src='images/jail.jpg' alt='test' width='455'>";
 	break;
-	
+//good ending
 	case 7:
 	document.getElementById("title").innerHTML = "The End";
 	document.getElementById("storyline").innerHTML = "That night, you, Patty and the rest of the detectives from your team go to a restaurant to celebrate your success. While you are eating, you look at the TV and find Regina's picture all over the screen. Next to that you find your picture with a title of 'Our Famous Dectective'! Right then Patty gets everyone's attention and announces that you are promoted to head dectective! You are thrilled by this news. Many successful years later, you become a world famous dectective and live to your dreams.";
@@ -78,6 +78,7 @@ function next(x) {
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(10)' value='Susan Johnson'> <input type='button' onClick='next(11)' value='Katie Rose'> <input type='button' onClick= 'next(12)' value='Regina Wright'>";
 		document.getElementById("image").innerHTML="<img src='images/susanJohnson.jpg' alt='test' width='300'><img src='images/katieRose.jpg' alt='test' width='300'><img src='images/reginaWright.jpg' alt='test' width='300'>"; 
 		break;
+	//suspects
 	case 10:
 	document.getElementById("title").innerHTML = "Susan";
 	document.getElementById("storyline").innerHTML = "You decide to look at the files for Susan Johnson. Dectective Joe tells you that he found out that she was inhured and was in the hospital the same time as the shooting. You know that Susan can't be the murderer.";
@@ -120,6 +121,7 @@ case 15:
 	document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(17)' value='Apologize for your lack of evidence'><input type='button' onClick='next(16)' value='Argue back to defend yourself'>";
 	document.getElementById("image").innerHTML="<img src='images/anger.jpg' alt='anger' width='455'>";
 	break;
+//Bad endings
 case 16:
 	document.getElementById("title").innerHTML = "The End";
 	document.getElementById("storyline").innerHTML = "You get angry with Dectective Joe and say that you were very tired, and could have made more mistakes since you had no idea what to do. You also say that this is your first big case, so he has no right to judge you. Dectective Joe gets annoyed and starts yelling at you. Even worse, he goes to Dectective Patty's office and reports how slow your progress is. She comes to see you and you try to defend yourself. However, Patty agrees with Joe and says that you don't have the potential to be a good dectective, and that your first priority should be your job. She also explains that you shouldn't have yelled at your colleagues, so she fires you.";
@@ -149,6 +151,7 @@ case 19:
 	document.getElementById("image").innerHTML="<img src='images/shadow.jpg' alt='test' width='455'>";
 	break;
 		}
+	//loading cookies
 	save_cookies(x);
 	}
 	
