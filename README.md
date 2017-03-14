@@ -3,7 +3,7 @@
 CsiWorld
 
 ## Description
-Text Adventure/Interactive Crime Story
+Text Adventure/Interactive Crime Story. You can be a dectective and be able to solve a crime. There are three endings and they will differ due to your choices in the story. 
 
 <!--
 ## FAQs
@@ -30,7 +30,7 @@ Insert answer here.
  * A border box for the texts
 
 ### Version 1.0
-This is our initial release. We hope you enjoy it!
+This is our initial release. We hope you enjoyed it!
 
 ## Credits
 * Sukriti Badami
