@@ -14,36 +14,47 @@ function next(x) {
 	case 1:
 		name = prompt("What do you want your main character's name to be?");
 		document.getElementById("title").innerHTML= "The Night At Central Park";
-		document.getElementById("storyline").innerHTML= "You are walking back from your detective office to your apartment. You hear a scream coming from Central Park. After that, follows a sound of a gunshot. You go toward the road and find a body covered with blood and see a shadow running in the distance with a shiny black gun, a model rare to find.";
-		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your detective colleagues?";
+		document.getElementById("storyline").innerHTML= "You taking a relaxing walk back from your dectective office to your apartment. You turn as you hear a ear-splitting scream coming from Central Park. After that, follows a sound of a gunshot. Sprinting towards the road, you find yourself before a body covered with blood. Out of the corner of your eye, a shadow runs in the distance. You follow the shadow you sighted, whoever was there is now gone.";
+		document.getElementById("remind").innerHTML = "Do you want to walk toward the body or call your dectective colleagues?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2)' value='Walk towards the body'> <input type='button'  onClick='next(4)' value='Call your colleagues'>";
 		document.getElementById("image").innerHTML="<img src='images/shadow1.jpg' alt='test' width='455'>";
 		break;
 		
 	case 2:
-		document.getElementById("title").innerHTML= "The Gun Finding";
-		document.getElementById("storyline").innerHTML= "You walk towards the body and find that the dead victim is none other than Hayley Smith, a famous actress. As you look around, you find a gun next to the body.";
-		document.getElementById("remind").innerHTML = "Do you want to keep the gun for evidence or go to the dectective office to search for files?";
+		document.getElementById("title").innerHTML= "The Mysterious Object";
+		document.getElementById("storyline").innerHTML= "You walk back towards the body and realize that the dead victim is none other than Hayley Smith, a famous actress. As you look around the park, you see the glint of silver at the bottom of the shallow pond in the park.";
+		document.getElementById("remind").innerHTML = "Do you want to fish out the silver object or go directly to the dectective office to report to crime?";
+		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(2.1)' value='Keep the gun'><input type='button'  onClick='next(4)' value='Go to the office'>";
+		break;
+	case 2.1:
+		document.getElementById("title").innerHTML= "Retreiving";
+		document.getElementById("storyline").innerHTML= "Rolling up your sleeves, you carefully reach into the murky water to pull the object out of the pond. From your previous years of study, you see that the object is a gun in a model rare to find.";
+		document.getElementById("remind").innerHTML = "Do you want to keep the gun or call the office to report to crime?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(3)' value='Keep the gun'><input type='button'  onClick='next(4)' value='Go to the office'>";
 		document.getElementById("image").innerHTML= "<img src='images/gun.gif' alt= 'test' width= '455'>";
 		break;
+
 	case 3: 
 		document.getElementById("title").innerHTML= "Going Home";	
-		document.getElementById("storyline").innerHTML= "You put the shiny gun in your purse and suddenly felt very tired.";
-		document.getElementById("remind").innerHTML = "Let's get some rest and go to the detective office tomorrow.";
+		document.getElementById("storyline").innerHTML= "You wipe the gun with your jacket and put it in your purse and suddenly fell very tired.";
+		document.getElementById("remind").innerHTML = "Let's get some rest and go to the dectective office tomorrow.";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(5)' value='Go to detective office to search for files and more evidence'>";
 		document.getElementById("image").innerHTML= "<img src='images/purse.jpg' alt= 'test' width= '455'>";
 		break;
 	case 4:
 		document.getElementById("title").innerHTML= "The Phone Call";	
-		document.getElementById("storyline").innerHTML= "You call your colleagues to make sure of what you're seeing. Detective Joe picks up the phone and you describe what you saw and your location. There is a long pause, then he tells you to come to the office for further investigation.";
+
+		document.getElementById("storyline").innerHTML= "You call your colleagues to confirm what you're seeing. Dectective Joe, your colleague, picks up the phone and you describe what you saw and your location. There is a long pause, then he tells you to come to the office for further investigation.";
 		document.getElementById("remind").innerHTML = "Do you want to go to the office or get some rest?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(8)' value='Go to the office'> <input type='button' onClick='next(14)' value= 'Get some rest and go tomorrow'>";
 		document.getElementById("image").innerHTML="<img src='images/joe.png' alt='test' width='455'>";
 		break;
 	case 5: 
 	document.getElementById("title").innerHTML = "The Finding of the Fingerprints";
+
+	document.getElementById("storyline").innerHTML= "You head back to your apartment and fall asleep as soon as your head hit the pillow. The next day, you wake up and go to your office to tell your colleagues and boss, Dectective Patty, what you saw last night. You then remember the gun you had kept in your purse and give it to the boss. You hand the gun over, asking her to dust for fingerprints of the shooter. She is delighted to know that you have the most valuable evidence in your possession. She explains that the fingerprint will lead right to the killer.";
 	document.getElementById("storyline").innerHTML= "You go back to your apartment and immediately fall asleep. The next day, you wake up and go to your office to tell your colleagues and boss, Detective Patty, what you saw last night. You then remember the gun you had kept in your purse and give it to the boss. You hand the gun over, asking her to dust it for fingerprints of the shooter. She is delighted to know that you have the most valuable evidence in your possession. She explains that the fingerprint will lead right to the killer.";
+
 		document.getElementById("remind").innerHTML = "Do you want to help Patty?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(6)' value='Yes!'> <input type='button' onClick='next(6)' value='No... You have other things to do.'>";
 		document.getElementById("image").innerHTML="<img src='images/fingerprint2.jpg' alt='test' width='455'>";
