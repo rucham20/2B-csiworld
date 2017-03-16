@@ -57,7 +57,7 @@ function next(x) {
 
 		document.getElementById("remind").innerHTML = "Do you want to help Patty?";
 		document.getElementById("buttons").innerHTML = "<input type='button' onClick='next(6)' value='Yes!'> <input type='button' onClick='next(6)' value='No... You have other things to do.'>";
-		document.getElementById("image").innerHTML="<img src='images/fingerprint2.jpg' alt='test' width='455'>";
+		document.getElementById("image").innerHTML="<img src='images/fingerprint.jpg' alt='test' width='455'>";
 		break;
 	case 6:
 	document.getElementById("title").innerHTML = "Victory for All... Except for Regina";
